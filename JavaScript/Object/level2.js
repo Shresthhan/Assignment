@@ -73,3 +73,25 @@ const data8 = { name: 'John', age: 25, city: 'New York' };
 const values = Object.values(data8);
 console.log(values);
 
+// Q9: Check if any property in the 'book' object has a value of null.
+// Expected output:
+// false
+const book9 = { title: 'JavaScript Basics', author: 'John Smith', year: 2020 };
+function check(){
+if(book9.title === null && book9.author === null && book9.year === null)
+  {
+    return true;
+  }
+else
+  return false;
+}
+check();
+
+// Q10: Reverse the 'fullName' property value in the 'person' object.
+// Expected output:
+// 'doe John'
+const person10 = { fullName: 'John doe' };
+const newArr = person10.fullName.split(" ")
+console.log(newArr)
+let name = newArr[1] + " " + newArr[0]
+console.log(name)
